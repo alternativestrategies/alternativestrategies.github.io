@@ -175,10 +175,16 @@
     left: 35%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .loader {
     top: 40%;
-    left: 30%;
+    left: 40%;
+  }
+}
+@media (max-width: 380px) {
+  .loader {
+    top: 40%;
+    left: 35%;
   }
 }
 
