@@ -1,0 +1,28 @@
+.navbar-light{
+    .navbar-nav .nav-link {
+        color: black;
+        &:hover {
+            color: black;
+        }
+        &.active{
+            color: black;
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 0)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .navbar-toggler {
+        padding: 5px 0;
+        border: 0;
+        font-size: 1.5rem;
+            &:focus{
+            outline:none;
+        }
+    }
+}
+.nav-button {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 0;
+}

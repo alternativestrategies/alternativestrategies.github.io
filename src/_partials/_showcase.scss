@@ -1,0 +1,145 @@
+#showcase {
+    h2 {
+        padding-top: 50px;
+        text-align: center;
+        text-transform: uppercase;
+    } 
+}
+
+// the main project
+.projects-main {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    margin: 20px auto 70px;
+    &-btn {
+        width: 25%;
+        height: 60px;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+    .text {
+        text-align: center;
+        color: white;
+        padding: 2rem 1.75rem;
+        margin-top: 50px;
+        h3 {
+            font-size: 6vh;
+            @media (max-width: 1000px){
+                font-size: 4vh;
+            }
+        }
+        p {
+            font-size: 3.6vh;
+            font-weight: 200;
+            width: 50%;
+            margin: 0 auto;
+            @media (max-width: 1000px){
+                font-size: 2.5vh;
+                width: 100%;
+            }
+        }
+        @media (max-width: 1000px){
+            margin-top: 0;
+        }
+    }
+    span {
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        bottom: 20%;
+        text-align: center;
+        margin: 0 -80px;
+    }
+    @media (max-width: 62.5em){
+        width: 80%;
+        height: 300px;
+    }
+ }
+ .main-group {
+     position: absolute;
+     left: 0;
+     width: 100%;
+     bottom: 30%;
+ }
+ .image {
+   display: block;
+   object-fit: cover;
+   object-position: 100% 0;
+   width: 100%;
+   height: 100%;
+   box-shadow: 0 36px 30px 0 rgba(51,51,51,.1);
+ }
+ .overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: rgba(0, 0, 0, .8);
+ }
+ 
+ .projects-main:hover .overlay {
+   opacity: 1;
+ }
+
+//  the project grid
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
+    grid-gap: 15px;
+    width: 70%;
+    margin: 0 auto;
+    &-grid {
+        position: relative;
+        border: 1px solid #333;
+        height: 300px;
+        padding: 2rem 1.75rem;
+        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+    .btn-group {
+        width: 100%;
+        position: absolute;
+        margin: 0;
+        bottom: 60px;
+    }
+    &-btn {
+        background-color: black;
+        color: white;
+        border: 0;
+        width: 100px;
+        height: 60px;
+        &:hover {
+            background-color: grey;
+        }
+    }
+    ul {
+        position: absolute;
+        bottom: 2px;
+        font-size: 12px;
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        line-height: 1.75;
+        padding: 0;
+        text-transform: uppercase;
+    }
+    @media (max-width: 62.5em){
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        width: 80%;
+    }
+    
+}

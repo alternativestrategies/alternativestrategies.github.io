@@ -1,0 +1,44 @@
+@import '_showcase';
+@import '_loader';
+@import '_navigation';
+@import '_about';
+@import '_footer';
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.head {
+    height: 100vh;
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 6.2vw;
+        @media (max-width: 720px){
+            font-size: 8.6vw;
+            width: 100vw;
+        }
+    }
+    p {
+        font-family: 'Inter', sans-serif;
+        font-size: 2.2vw;
+        font-weight: 200;
+        @media (max-width: 720px){
+            font-size: 3.6vw;
+            width: 100vw;
+        }
+    }
+    &-text {
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+}

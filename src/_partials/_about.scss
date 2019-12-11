@@ -1,0 +1,21 @@
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    h2 {
+        font-size: 6vh;
+        font-weight: 200;
+        line-height: 1.7;
+        @media (max-width: 960px){
+            line-height: 1.4;
+            font-size: 5vh;
+        }
+        @media (max-width: 400px){
+            line-height: 1.2;
+            font-size: 4.2vh;
+        }
+    }
+}
