@@ -22,12 +22,12 @@ class Showcase extends Component{
           <h3>{p.title}</h3>
           <p>{p.description}</p>
           <div className="btn-group">
-            <a href={p.live}>
+            <a href={p.live} target="_blank" rel="noopener noreferrer">
             <button className="projects-btn">
               Live
               </button>
             </a>
-            <a href={p.code}>
+            <a href={p.code} target="_blank" rel="noopener noreferrer">
               <button className="projects-btn">Code</button>
             </a>
           </div>
