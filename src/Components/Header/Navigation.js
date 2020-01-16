@@ -1,6 +1,6 @@
 import React from 'react';
 import {Nav, Navbar} from 'react-bootstrap';
-// import pdf from '../../Documents/resume.pdf';
+import pdf from '../../resume.pdf';
 
 const Navigation = () => {
     return (
@@ -16,8 +16,8 @@ const Navigation = () => {
             <Nav.Item>
             <Nav.Link href="#about">About</Nav.Link>
             </Nav.Item>
-             {/* <Nav.Link href={pdf} target='_blank' >Resume</Nav.Link> */}
-              <Nav.Link href="#pdf" target='_blank' >Resume</Nav.Link>
+             <Nav.Link href={pdf} target="_blank" rel="noopener noreferrer">Resume</Nav.Link>
+              {/* <Nav.Link href="#pdf" target='_blank' >Resume</Nav.Link> */}
           
           </Nav>
         </Navbar.Collapse>
